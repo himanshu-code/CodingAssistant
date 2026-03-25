@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+@import "tailwindcss";
+
+
+/* ============================================
+   DEVMATE AI — "Indigo Syntax" Design System
+   Source: Stitch asset/44961d73c942471bac1149bc6a19eebe
+   ============================================ */
+
+:root {
+  /* Base app colors */
+  --background: #060e20;
+  --foreground: #dee5ff;
+}
+
+@theme inline {
+  /* ---------- Surface Scale ---------- */
+  --color-surface:                  #060e20;
+  --color-surface-dim:              #060e20;
+  --color-surface-container-lowest: #000000;
+  --color-surface-container-low:    #091328;
+  --color-surface-container:        #0f1930;
+  --color-surface-container-high:   #141f38;
+  --color-surface-container-highest:#192540;
+  --color-surface-bright:           #1f2b49;
+  --color-surface-variant:          #192540;
+
+  /* ---------- On-Surface ---------- */
+  --color-on-surface:         #dee5ff;
+  --color-on-surface-variant: #a3aac4;
+  --color-on-background:      #dee5ff;
+  --color-background:         var(--background);
+  --color-foreground:         var(--foreground);
+
+  /* ---------- Primary (Indigo) ---------- */
+  --color-primary:              #a3a6ff;
+  --color-primary-container:    #9396ff;
+  --color-primary-dim:          #5c5ffd;
+  --color-primary-fixed:        #9396ff;
+  --color-primary-fixed-dim:    #8387ff;
+  --color-on-primary:           #0f00a4;
+  --color-on-primary-container: #0a0081;
+  --color-inverse-primary:      #4546e7;
+
+  /* ---------- Secondary (Soft Purple) ---------- */
+  --color-secondary:              #a28efc;
+  --color-secondary-container:    #49339d;
+  --color-secondary-dim:          #a28efc;
+  --color-secondary-fixed:        #d6cbff;
+  --color-secondary-fixed-dim:    #c8bbff;
+  --color-on-secondary:           #21006d;
+  --color-on-secondary-container: #d4c9ff;
+
+  /* ---------- Tertiary (Rose/Pink — AI accent) ---------- */
+  --color-tertiary:           #ffa5d9;
+  --color-tertiary-container: #ff8ed2;
+  --color-tertiary-dim:       #ef81c4;
+  --color-tertiary-fixed:     #ff8ed2;
+  --color-tertiary-fixed-dim: #ef81c4;
+  --color-on-tertiary:        #701455;
+
+  /* ---------- Error ---------- */
+  --color-error:              #ff6e84;
+  --color-error-container:    #a70138;
+  --color-error-dim:          #d73357;
+  --color-on-error:           #490013;
+  --color-on-error-container: #ffb2b9;
+
+  /* ---------- Outline ---------- */
+  --color-outline:         #6d758c;
+  --color-outline-variant: #40485d;
+
+  /* ---------- Inverse ---------- */
+  --color-inverse-surface:    #faf8ff;
+  --color-inverse-on-surface: #4d556b;
+
+  /* ---------- Tint ---------- */
+  --color-surface-tint: #a3a6ff;
+
+  /* ============================================
+     Typography
+     Inter for UI, JetBrains Mono for code
+     ============================================ */
+  --font-sans:    var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono:    var(--font-jetbrains-mono), ui-monospace, monospace;
+  /* display alias kept for backward compat — maps to sans (Inter) */
+  --font-display: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ============================================
+   Base Styles
+   ============================================ */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* Material Symbols helper */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+
+/* Glass panel utility */
+.glass-panel {
+  background: rgba(25, 37, 64, 0.4); /* surface-variant at 40% */
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+/* Tab active glow */
+.tab-active-glow {
+  box-shadow: 0 2px 10px rgba(163, 166, 255, 0.3);
+}
+
+/* No scrollbar utility */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+

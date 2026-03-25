@@ -1,0 +1,37 @@
+# Build results
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+
+# IDE
+.vs/
+.vscode/
+*.user
+*.suo
+*.sln.iml
+
+# Dependencies
+packages/
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+
+# AI/ML models (if applicable)
+*.model
+*.pkl
+
+# Python cache
+__pycache__/
+**/__pycache__/
+*.pyc
