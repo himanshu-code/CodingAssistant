@@ -39,6 +39,16 @@ import Layers from '@mui/icons-material/Layers';
 import DataObject from '@mui/icons-material/DataObject';
 import Memory from '@mui/icons-material/Memory';
 import ThumbUpOutlined from '@mui/icons-material/ThumbUpOutlined';
+import CheckCircle from '@mui/icons-material/CheckCircle';
+import HelpOutline from '@mui/icons-material/HelpOutline';
+import SmartToy from '@mui/icons-material/SmartToy';
+import Description from '@mui/icons-material/Description';
+import FolderIcon from '@mui/icons-material/Folder';
+import Send from '@mui/icons-material/Send';
+import AttachFile from '@mui/icons-material/AttachFile';
+import ChatBubble from '@mui/icons-material/ChatBubble';
+import Psychology from '@mui/icons-material/Psychology';
+import Stars from '@mui/icons-material/Stars';
 
 // Map Material Symbols string names → MUI icon components
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -82,6 +92,16 @@ const iconMap: Record<string, React.ComponentType<any>> = {
   layers: Layers,
   data_object: DataObject,
   memory: Memory,
+  check_circle: CheckCircle,
+  help_outline: HelpOutline,
+  smart_toy: SmartToy,
+  description: Description,
+  folder: FolderIcon,
+  send: Send,
+  attach_file: AttachFile,
+  chat_bubble: ChatBubble,
+  cognition: Psychology,
+  stars: Stars,
 };
 
 const muiSizeMap = {

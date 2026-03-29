@@ -25,7 +25,7 @@ const variantStyles = {
   `,
   secondary: `
     bg-transparent border border-outline/20
-    text-primary font-medium
+    text-color-on-background font-medium
     hover:bg-surface-bright
     active:scale-[0.98]
   `,
