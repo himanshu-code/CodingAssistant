@@ -16,7 +16,7 @@ def classify_query(query:str)->str:
     - debug
     - explain
     - generate
-    
+
     only return ONE word from the above options.
 
     Query:{query} 
@@ -35,6 +35,8 @@ def handle_query(message: str) -> str:
         return debugAgent.run(message)
     elif "explain" in agent_type:
         return explainAgent.run(message)
+    elif "generate" in agent_type:
+        return generateAgent.run(message)
     else:
         logger.warning(f"Unable to classify query: {message}")
     return f"Received: {message}"

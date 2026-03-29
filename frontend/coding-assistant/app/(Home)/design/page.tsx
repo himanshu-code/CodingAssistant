@@ -1,15 +1,15 @@
 'use client';
 
 import { useState } from "react";
-import { Header } from "./components/Header";
-import { Tabs } from "./components/Tabs";
-import { Badge } from "./components/Badge";
-import { Input } from "./components/Input";
-import { Accordion } from "./components/Accordion";
-import { MobileNav } from "./components/MobileNav";
-import { Button } from "./components/Button";
-import { Icon } from "./components/Icon";
-import { Modal } from "./components/Modal";
+import { Header } from "@/components/Header";
+import { Tabs } from "@/components/Tabs";
+import { Badge } from "@/components/Badge";
+import { Input } from "@/components/Input";
+import { Accordion } from "@/components/Accordion";
+import { MobileNav } from "@/components/MobileNav";
+import { Button } from "@/components/Button";
+import { Icon } from "@/components/Icon";
+import { Modal } from "@/components/Modal";
 
 export default function Home() {
   const [modalOpen, setModalOpen] = useState(false);
